@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-normal: #1F1F1F;
+    --color-placeholder: #CECECE;
+
+    --color-primary: #0463BB;
+    --color-primary-700: #0463BB;
+    --color-primary-600: #0573DA;
+    --color-primary-500: #0684F9;
+    --color-primary-400: #59ADFB;
+    --color-primary-300: #ACD6FD;
+
+    --color-secondary: #10248E;
+    --color-secondary-700: #10248E;
+    --color-secondary-600: #1836D5;
+    --color-secondary-500: #5169EB;
+    --color-secondary-400: #7D8FF0;
+    --color-secondary-300: #A8B4F5;
+
+    --color-error: #E32424;
+    --color-success: #46BA1D;
+    --color-label: #8A92A6;
+    --color-icon: #474747;
+
+    --color-table-bg-odd: #202427;
+    --color-table-bg-even: #2E3235;
+    --color-table-fg: white;
+  }
+
+  .button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px;
+    width: 188px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: var(--color-primary-600);
+  }
+  .button > p {
+    font-size: 16px;
+    font-family: "Source Sans Pro";
+    font-weight: 700;
+    line-height: 24;
+    text-align: center;
+    color: white;
+  }
+}

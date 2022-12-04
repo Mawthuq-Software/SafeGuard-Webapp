@@ -8,15 +8,14 @@
         <h3>Sign In</h3>
         <FormTextInput label="Username" name="username" />
         <FormTextInput label="Password" name="password" />
-        <span>
-          <input type="checkbox" />
-          <label>Remember me</label>
-          <label>Forgot password</label>
-        </span>
+        <div class="flex flex-row justify-between w-full">
+          <Checkbox label="Remember me"/>
+          <TextLink>Forgot password</TextLink>
+        </div>
         <Button label="Sign In" />
-        <p>Don't have an account? Create an account</p>
       </div>
-      <div>
+      <div class="pt-8 text-center">
+        <span>Don't have an account? &nbsp;&nbsp;<TextLink>Create an account</TextLink></span>
       </div>
     </div>
   </div>

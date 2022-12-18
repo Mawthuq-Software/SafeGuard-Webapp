@@ -1,8 +1,8 @@
 <template>
   <div class="button">
-    <p>
+    <span>
       {{label}}
-    </p>
+    </span>
   </div>
 </template>
 

@@ -8,6 +8,7 @@
     --color-placeholder: #CECECE;
 
     --color-primary: #0463BB;
+    --color-primary-800: #0048B2;
     --color-primary-700: #0463BB;
     --color-primary-600: #0573DA;
     --color-primary-500: #0684F9;
@@ -144,12 +145,17 @@
     border-radius: 4px;
     background-color: var(--color-primary-600);
   }
-  .button > p {
+  .button > span {
     font-size: 16px;
     font-weight: 700;
-    line-height: 24;
+    /* line-height: 24; */
     text-align: center;
     color: white;
+    user-select: none;
+  }
+  .button:hover {
+    cursor: pointer;
+    background-color: var(--color-primary-500);
   }
 
   .auth-background {

@@ -3,8 +3,8 @@
     <div :class="checkboxClass">
       <img src="/tick.svg" v-show="checked" />
     </div>
-    <div v-if="label" class="checkbox-label">
-      <label>{{label}}</label>
+    <div v-if="labelString" class="checkbox-label">
+      <label>{{labelString}}</label>
     </div>
   </div>
 </template>
@@ -13,7 +13,7 @@
 
   const props = defineProps({
     initialChecked: Boolean,
-    label: String,
+    labelString: String,
   });
 
   // checked state boolean initialize to initialChecked

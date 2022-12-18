@@ -9,6 +9,7 @@ export default <Partial<Config>>{
 
         primary: {
           DEFAULT: '#0463BB',
+          800: "#0048B2",
           700: '#0463BB',
           600: '#0573DA',
           500: '#0684F9',

@@ -9,21 +9,25 @@
         <FormTextInput label="Username" name="username" />
         <FormTextInput label="Password" name="password" />
         <div class="flex flex-row justify-between w-full">
-          <Checkbox label="Remember me"/>
-          <TextLink>Forgot password</TextLink>
+          <Checkbox labelString="Remember me"/>
+          <TextLink link="forgot-password">Forgot password</TextLink>
         </div>
-        <Button label="Sign In" />
+        <Button label="Sign In" @click="handleSignIn" />
       </div>
       <div class="pt-8 text-center">
-        <span>Don't have an account? &nbsp;&nbsp;<TextLink>Create an account</TextLink></span>
+        <span>Don't have an account? &nbsp;&nbsp;<TextLink link="register">Create an account</TextLink></span>
       </div>
     </div>
   </div>
 </template>
 
 
-<script>
+<script setup>
 definePageMeta({
   layout: "auth",
 });
+
+function handleSignIn () {
+  console.log('handleSignIn pressed')
+}
 </script>

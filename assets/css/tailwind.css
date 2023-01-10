@@ -3,17 +3,25 @@
 @tailwind utilities;
 
 @layer base {
+  /* * {
+    border: 1px solid red;
+  } */
   :root {
     --color-normal: #1F1F1F;
     --color-placeholder: #CECECE;
 
+    --color-shadow-line: #DDE1E5;
+
     --color-primary: #0463BB;
+    --color-primary-900: #2E65F3;
     --color-primary-800: #0048B2;
     --color-primary-700: #0463BB;
     --color-primary-600: #0573DA;
     --color-primary-500: #0684F9;
+    --color-primary-500-lighter: #0684F926;
     --color-primary-400: #59ADFB;
     --color-primary-300: #ACD6FD;
+    --color-primary-200: #DCECFB;
 
     --color-secondary: #10248E;
     --color-secondary-700: #10248E;
@@ -27,12 +35,20 @@
     --color-label: #8A92A6;
     --color-icon: #474747;
     --color-h4: #232D42;
+    --color-aside: #6F727A;
     --color-disabled-bg: #F5F7F8;
     --color-disabled-borders: #5F7387;
+
+    --color-card-border: #E0E2E7;
+
+    --color-container: #E9ECEF;
 
     --color-table-bg-odd: #202427;
     --color-table-bg-even: #2E3235;
     --color-table-fg: white;
+
+    --progress: 20%;
+    --progress-value: "20%";
   }
 
   html {
@@ -50,11 +66,20 @@
     font-family: "Source Sans Pro";
   }
 
+  #Layer_1 {
+    transform: scale(25) translate(0px, -100px);
+  }
+
   #__nuxt {
     display: flex;
     flex: 1;
     height: 100%;
     width: 100%
+  }
+
+  aside {
+    color: var(--color-aside);
+    font-size: 1rem;
   }
 
   h4 {
@@ -69,6 +94,12 @@
     font-size: 40px;
     line-height: 50px;
     color: #000000;
+  }
+  
+  h5 {
+    font-size: 28px;
+    line-height: 35px;
+    font-weight: 700;
   }
 
   label {
@@ -163,4 +194,139 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+
+  .sidemenu-items {
+    color: var(--color-label);
+  }
+
+  .sidemenu-items > p.text-label {
+    color: var(--color-label);
+  }
+
+  .active-link {
+    color: var(--color-primary-500);
+    background-color: var(--color-primary-500-lighter);
+    border-left: 3px solid var(--color-primary-500);
+  }
+
+  .active-link > p.text-label{
+    color: var(--color-primary-500);
+  }
+
+  .home-icon {
+    
+  }
+
+  .card {
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.05), 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+  }
+
+  .cardgroup {
+    height: 120px;
+  }
+
+  .progress{
+    display: flex;
+    justify-content: space-around;
+  }
+  .progress-item {
+    display: flex;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    font-size: 0;
+    background: white;
+    animation: .4s ease-out reverse;
+    background: conic-gradient(var(--color-primary-900) calc(var(--progress)), var(--color-primary-200) 0deg);
+
+  }
+  
+  .progress-item::after {
+    /* --progress: 20%;
+    --progress-value: "20%"; */
+    content: var(--progress-value);
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 240px;
+    margin: 20px;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 48px;
+    /* line-height: 60px; */
+    color: #232325;
+    background: white;
+  }
+
+  .table-header {
+    width: 100%;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px 8px 0px 0px;
+    border-bottom: 1px solid var(--color-card-border);
+  }
+
+  .table-header > .cell.action-cell {
+    display: flex;
+    flex-grow: 0;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    min-width: 90px;
+  }
+
+  .table-header > .cell {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 4px;
+    width: 100%;
+  }
+
+  .x-table-row {
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    border-bottom: 1px solid var(--color-card-border);
+    height: 40px;
+    width: 100%;
+  }
+
+  .x-table-row > .cell {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 16px;
+    gap: 4px;
+    width: 100%;
+  }
+
+  .x-table-row > .cell.action-cell {
+    display: flex;
+    flex-grow: 0;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    min-width: 90px;
+  }
+
+  [class~='x-table-row']:last-of-type  {
+    border-bottom: 0px;
+  }
+
+
+  .table-contents {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px 0px 8px 8px;
+  }
+
 }

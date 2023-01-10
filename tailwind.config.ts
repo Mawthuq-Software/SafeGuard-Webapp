@@ -9,12 +9,15 @@ export default <Partial<Config>>{
 
         primary: {
           DEFAULT: '#0463BB',
+          900: '#2E65F3',
           800: "#0048B2",
           700: '#0463BB',
           600: '#0573DA',
           500: '#0684F9',
+          "500-lighter": "#0684F926",
           400: '#59ADFB',
           300: '#ACD6FD',
+          200: '#DCECFB',
         },
 
         secondary: {
@@ -30,6 +33,14 @@ export default <Partial<Config>>{
         success: "#46BA1D",
         label: "#8A92A6",
         icon: "#474747",
+        aside: "#6F727A",
+
+        shadowLine: "#DDE1E5",
+        disabledBorders: "#5F7387",
+
+        cardBorder: "E0E2E7",
+
+        container: "#E9ECEF",
 
         table: {
           bg: {

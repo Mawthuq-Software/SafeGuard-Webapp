@@ -3,7 +3,7 @@
     <div class="block w-1/2">
 
       <div>
-        <h4>Brand.</h4>
+        <UnauthLogo/>
       </div>
       <div class="flex flex-0 flex-col justify-center items-center pt-10 gap-4 w-full">
         <div>

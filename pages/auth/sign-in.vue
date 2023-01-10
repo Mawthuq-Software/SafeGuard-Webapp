@@ -1,9 +1,7 @@
 <template>
   <div class="flex flex-1 h-full justify-center items-center">
     <div class="block w-1/2">
-      <div>
-        <h4>Brand.</h4>
-      </div>
+      <UnauthLogo/>
       <div class="flex flex-0 flex-col justify-center items-center pt-10 gap-4 w-full">
         <h3>Sign In</h3>
         <FormTextInput label="Username" name="username" />
@@ -27,7 +25,7 @@ definePageMeta({
   layout: "auth",
 });
 
-function handleSignIn () {
-  console.log('handleSignIn pressed')
+async function handleSignIn () {
+  await navigateTo("/")
 }
 </script>

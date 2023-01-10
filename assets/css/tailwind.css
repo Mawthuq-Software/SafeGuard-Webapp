@@ -66,8 +66,8 @@
     font-family: "Source Sans Pro";
   }
 
-  #Layer_1 {
-    transform: scale(25) translate(0px, -100px);
+  #auth > #Layer_1 {
+    transform: scale(25) translate(9.3px, 0px);
   }
 
   #__nuxt {

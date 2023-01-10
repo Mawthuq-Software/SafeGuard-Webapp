@@ -3,7 +3,8 @@ export default defineNuxtConfig({
   components: true,
   modules: [
     '@nuxtjs/google-fonts',
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    'nuxt-icons'
   ],
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.css',

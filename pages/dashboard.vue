@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col items-start gap-4">
     <div class="flex flex-row justify-center items-center w-full bg-white card cardgroup"
-      style="height: 120px; max-width: 1024px;">
+      style="height: 120px; ">
       <DashboardCardGroupItem>
         <aside>Used Bandwidth</aside>
         <h3>2TB</h3>
@@ -68,5 +68,15 @@ aside {
   /* white-space: nowrap;
     overflow: hidden; */
   text-overflow: ellipsis;
+}
+
+.cardgroup > .card-group-item {
+  border: 0px;
+  border-right: 1px solid var(--color-card-border);
+  height: 120px;
+}
+
+.cardgroup > .card-group-item:last-of-type {
+  border-right: 0px;
 }
 </style>

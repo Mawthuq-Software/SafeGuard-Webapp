@@ -10,7 +10,7 @@
         <TableCell>Subnet</TableCell>
         <TableCell>DNS</TableCell>
         <TableCell>Status</TableCell>
-        <TableCell>&nbsp;</TableCell>
+        <TableActionCell>&nbsp;</TableActionCell>
       </TableHeader>
       <TableBody>
         <TableRow>
@@ -21,9 +21,9 @@
           <TableCell>16</TableCell>
           <TableCell>8.8.8.8</TableCell>
           <TableCell>Status</TableCell>
-          <TableCell>
+          <TableActionCell>
             <nuxt-icon filled name="edit" />
-          </TableCell>
+          </TableActionCell>
         </TableRow>
         <TableRow>
           <TableCell>
@@ -33,9 +33,9 @@
           <TableCell>16</TableCell>
           <TableCell>8.8.8.8</TableCell>
           <TableCell>Status</TableCell>
-          <TableCell>
+          <TableActionCell>
             <nuxt-icon filled name="edit" />
-          </TableCell>
+          </TableActionCell>
         </TableRow>
         <TableRow>
           <TableCell>
@@ -45,9 +45,9 @@
           <TableCell>16</TableCell>
           <TableCell>8.8.8.8</TableCell>
           <TableCell>Status</TableCell>
-          <TableCell>
+          <TableActionCell>
             <nuxt-icon filled name="edit" />
-          </TableCell>
+          </TableActionCell>
         </TableRow>
         <TableRow>
           <TableCell>
@@ -57,9 +57,9 @@
           <TableCell>16</TableCell>
           <TableCell>8.8.8.8</TableCell>
           <TableCell>Status</TableCell>
-          <TableCell>
+          <TableActionCell>
             <nuxt-icon filled name="edit" />
-          </TableCell>
+          </TableActionCell>
         </TableRow>
         <TableRow>
           <TableCell>
@@ -69,9 +69,9 @@
           <TableCell>16</TableCell>
           <TableCell>8.8.8.8</TableCell>
           <TableCell>Status</TableCell>
-          <TableCell>
+          <TableActionCell>
             <nuxt-icon filled name="edit" />
-          </TableCell>
+          </TableActionCell>
         </TableRow>
         <TableRow>
           <TableCell>
@@ -81,9 +81,9 @@
           <TableCell>16</TableCell>
           <TableCell>8.8.8.8</TableCell>
           <TableCell>Status</TableCell>
-          <TableCell>
+          <TableActionCell>
             <nuxt-icon filled name="edit" />
-          </TableCell>
+          </TableActionCell>
         </TableRow>
         <TableRow>
           <TableCell>
@@ -93,9 +93,9 @@
           <TableCell>16</TableCell>
           <TableCell>8.8.8.8</TableCell>
           <TableCell>Status</TableCell>
-          <TableCell>
+          <TableActionCell>
             <nuxt-icon filled name="edit" />
-          </TableCell>
+          </TableActionCell>
         </TableRow>
         <TableRow>
           <TableCell>
@@ -105,9 +105,9 @@
           <TableCell>16</TableCell>
           <TableCell>8.8.8.8</TableCell>
           <TableCell>Status</TableCell>
-          <TableCell>
+          <TableActionCell>
             <nuxt-icon filled name="edit" />
-          </TableCell>
+          </TableActionCell>
         </TableRow>
         <TableRow>
           <TableCell>
@@ -117,9 +117,9 @@
           <TableCell>16</TableCell>
           <TableCell>8.8.8.8</TableCell>
           <TableCell>Status</TableCell>
-          <TableCell>
+          <TableActionCell>
             <nuxt-icon filled name="edit" />
-          </TableCell>
+          </TableActionCell>
         </TableRow>
         <TableRow>
           <TableCell>
@@ -129,9 +129,9 @@
           <TableCell>16</TableCell>
           <TableCell>8.8.8.8</TableCell>
           <TableCell>Status</TableCell>
-          <TableCell>
+          <TableActionCell>
             <nuxt-icon filled name="edit" />
-          </TableCell>
+          </TableActionCell>
         </TableRow>
         <TableRow>
           <TableCell>
@@ -141,9 +141,9 @@
           <TableCell>16</TableCell>
           <TableCell>8.8.8.8</TableCell>
           <TableCell>Status</TableCell>
-          <TableCell>
+          <TableActionCell>
             <nuxt-icon filled name="edit" />
-          </TableCell>
+          </TableActionCell>
         </TableRow>
         <TableRow>
           <TableCell>
@@ -153,9 +153,9 @@
           <TableCell>16</TableCell>
           <TableCell>8.8.8.8</TableCell>
           <TableCell>Status</TableCell>
-          <TableCell>
+          <TableActionCell>
             <nuxt-icon filled name="edit" />
-          </TableCell>
+          </TableActionCell>
         </TableRow>
         <TableRow>
           <TableCell>
@@ -165,9 +165,9 @@
           <TableCell>16</TableCell>
           <TableCell>8.8.8.8</TableCell>
           <TableCell>Status</TableCell>
-          <TableCell>
+          <TableActionCell>
             <nuxt-icon filled name="edit" />
-          </TableCell>
+          </TableActionCell>
         </TableRow>
         
       </TableBody>
